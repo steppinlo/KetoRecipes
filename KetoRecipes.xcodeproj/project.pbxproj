@@ -99,6 +99,9 @@
 		C91102A11E4D177B00C23B2A /* KetoRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				C91102D51E4D17BD00C23B2A /* ViewControllers */,
+				C91102D41E4D17B200C23B2A /* ViewModels */,
+				C91102D31E4D17A600C23B2A /* Models */,
 				C91102A21E4D177B00C23B2A /* AppDelegate.swift */,
 				C91102A41E4D177B00C23B2A /* ViewController.swift */,
 				C91102A61E4D177B00C23B2A /* Main.storyboard */,
@@ -126,6 +129,27 @@
 				C91102C71E4D177B00C23B2A /* Info.plist */,
 			);
 			path = KetoRecipesUITests;
+			sourceTree = "<group>";
+		};
+		C91102D31E4D17A600C23B2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C91102D41E4D17B200C23B2A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		C91102D51E4D17BD00C23B2A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
