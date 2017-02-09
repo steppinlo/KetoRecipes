@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C91102A31E4D177B00C23B2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91102A21E4D177B00C23B2A /* AppDelegate.swift */; };
+		C91102A51E4D177B00C23B2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91102A41E4D177B00C23B2A /* ViewController.swift */; };
+		C91102A81E4D177B00C23B2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91102A61E4D177B00C23B2A /* Main.storyboard */; };
+		C91102AB1E4D177B00C23B2A /* KetoRecipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C91102A91E4D177B00C23B2A /* KetoRecipes.xcdatamodeld */; };
+		C91102AD1E4D177B00C23B2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91102AC1E4D177B00C23B2A /* Assets.xcassets */; };
+		C91102B01E4D177B00C23B2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91102AE1E4D177B00C23B2A /* LaunchScreen.storyboard */; };
+		C91102BB1E4D177B00C23B2A /* KetoRecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91102BA1E4D177B00C23B2A /* KetoRecipesTests.swift */; };
+		C91102C61E4D177B00C23B2A /* KetoRecipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91102C51E4D177B00C23B2A /* KetoRecipesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C91102B71E4D177B00C23B2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C91102971E4D177B00C23B2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C911029E1E4D177B00C23B2A;
+			remoteInfo = KetoRecipes;
+		};
+		C91102C21E4D177B00C23B2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C91102971E4D177B00C23B2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C911029E1E4D177B00C23B2A;
+			remoteInfo = KetoRecipes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C911029F1E4D177B00C23B2A /* KetoRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KetoRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C91102A21E4D177B00C23B2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C91102A41E4D177B00C23B2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C91102A71E4D177B00C23B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C91102AA1E4D177B00C23B2A /* KetoRecipes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KetoRecipes.xcdatamodel; sourceTree = "<group>"; };
+		C91102AC1E4D177B00C23B2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C91102AF1E4D177B00C23B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C91102B11E4D177B00C23B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C91102B61E4D177B00C23B2A /* KetoRecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KetoRecipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C91102BA1E4D177B00C23B2A /* KetoRecipesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KetoRecipesTests.swift; sourceTree = "<group>"; };
+		C91102BC1E4D177B00C23B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C91102C11E4D177B00C23B2A /* KetoRecipesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KetoRecipesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C91102C51E4D177B00C23B2A /* KetoRecipesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KetoRecipesUITests.swift; sourceTree = "<group>"; };
+		C91102C71E4D177B00C23B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C911029C1E4D177B00C23B2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C91102B31E4D177B00C23B2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C91102BE1E4D177B00C23B2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C91102961E4D177B00C23B2A = {
+			isa = PBXGroup;
+			children = (
+				C91102A11E4D177B00C23B2A /* KetoRecipes */,
+				C91102B91E4D177B00C23B2A /* KetoRecipesTests */,
+				C91102C41E4D177B00C23B2A /* KetoRecipesUITests */,
+				C91102A01E4D177B00C23B2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C91102A01E4D177B00C23B2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C911029F1E4D177B00C23B2A /* KetoRecipes.app */,
+				C91102B61E4D177B00C23B2A /* KetoRecipesTests.xctest */,
+				C91102C11E4D177B00C23B2A /* KetoRecipesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C91102A11E4D177B00C23B2A /* KetoRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				C91102A21E4D177B00C23B2A /* AppDelegate.swift */,
+				C91102A41E4D177B00C23B2A /* ViewController.swift */,
+				C91102A61E4D177B00C23B2A /* Main.storyboard */,
+				C91102AC1E4D177B00C23B2A /* Assets.xcassets */,
+				C91102AE1E4D177B00C23B2A /* LaunchScreen.storyboard */,
+				C91102B11E4D177B00C23B2A /* Info.plist */,
+				C91102A91E4D177B00C23B2A /* KetoRecipes.xcdatamodeld */,
+			);
+			path = KetoRecipes;
+			sourceTree = "<group>";
+		};
+		C91102B91E4D177B00C23B2A /* KetoRecipesTests */ = {
+			isa = PBXGroup;
+			children = (
+				C91102BA1E4D177B00C23B2A /* KetoRecipesTests.swift */,
+				C91102BC1E4D177B00C23B2A /* Info.plist */,
+			);
+			path = KetoRecipesTests;
+			sourceTree = "<group>";
+		};
+		C91102C41E4D177B00C23B2A /* KetoRecipesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C91102C51E4D177B00C23B2A /* KetoRecipesUITests.swift */,
+				C91102C71E4D177B00C23B2A /* Info.plist */,
+			);
+			path = KetoRecipesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C911029E1E4D177B00C23B2A /* KetoRecipes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C91102CA1E4D177B00C23B2A /* Build configuration list for PBXNativeTarget "KetoRecipes" */;
+			buildPhases = (
+				C911029B1E4D177B00C23B2A /* Sources */,
+				C911029C1E4D177B00C23B2A /* Frameworks */,
+				C911029D1E4D177B00C23B2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KetoRecipes;
+			productName = KetoRecipes;
+			productReference = C911029F1E4D177B00C23B2A /* KetoRecipes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C91102B51E4D177B00C23B2A /* KetoRecipesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C91102CD1E4D177B00C23B2A /* Build configuration list for PBXNativeTarget "KetoRecipesTests" */;
+			buildPhases = (
+				C91102B21E4D177B00C23B2A /* Sources */,
+				C91102B31E4D177B00C23B2A /* Frameworks */,
+				C91102B41E4D177B00C23B2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C91102B81E4D177B00C23B2A /* PBXTargetDependency */,
+			);
+			name = KetoRecipesTests;
+			productName = KetoRecipesTests;
+			productReference = C91102B61E4D177B00C23B2A /* KetoRecipesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C91102C01E4D177B00C23B2A /* KetoRecipesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C91102D01E4D177B00C23B2A /* Build configuration list for PBXNativeTarget "KetoRecipesUITests" */;
+			buildPhases = (
+				C91102BD1E4D177B00C23B2A /* Sources */,
+				C91102BE1E4D177B00C23B2A /* Frameworks */,
+				C91102BF1E4D177B00C23B2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C91102C31E4D177B00C23B2A /* PBXTargetDependency */,
+			);
+			name = KetoRecipesUITests;
+			productName = KetoRecipesUITests;
+			productReference = C91102C11E4D177B00C23B2A /* KetoRecipesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C91102971E4D177B00C23B2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Stephanie Lo";
+				TargetAttributes = {
+					C911029E1E4D177B00C23B2A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BVBT6986X6;
+						ProvisioningStyle = Automatic;
+					};
+					C91102B51E4D177B00C23B2A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BVBT6986X6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C911029E1E4D177B00C23B2A;
+					};
+					C91102C01E4D177B00C23B2A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BVBT6986X6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C911029E1E4D177B00C23B2A;
+					};
+				};
+			};
+			buildConfigurationList = C911029A1E4D177B00C23B2A /* Build configuration list for PBXProject "KetoRecipes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C91102961E4D177B00C23B2A;
+			productRefGroup = C91102A01E4D177B00C23B2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C911029E1E4D177B00C23B2A /* KetoRecipes */,
+				C91102B51E4D177B00C23B2A /* KetoRecipesTests */,
+				C91102C01E4D177B00C23B2A /* KetoRecipesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C911029D1E4D177B00C23B2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91102B01E4D177B00C23B2A /* LaunchScreen.storyboard in Resources */,
+				C91102AD1E4D177B00C23B2A /* Assets.xcassets in Resources */,
+				C91102A81E4D177B00C23B2A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C91102B41E4D177B00C23B2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C91102BF1E4D177B00C23B2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C911029B1E4D177B00C23B2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91102A51E4D177B00C23B2A /* ViewController.swift in Sources */,
+				C91102AB1E4D177B00C23B2A /* KetoRecipes.xcdatamodeld in Sources */,
+				C91102A31E4D177B00C23B2A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C91102B21E4D177B00C23B2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91102BB1E4D177B00C23B2A /* KetoRecipesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C91102BD1E4D177B00C23B2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C91102C61E4D177B00C23B2A /* KetoRecipesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C91102B81E4D177B00C23B2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C911029E1E4D177B00C23B2A /* KetoRecipes */;
+			targetProxy = C91102B71E4D177B00C23B2A /* PBXContainerItemProxy */;
+		};
+		C91102C31E4D177B00C23B2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C911029E1E4D177B00C23B2A /* KetoRecipes */;
+			targetProxy = C91102C21E4D177B00C23B2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C91102A61E4D177B00C23B2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C91102A71E4D177B00C23B2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C91102AE1E4D177B00C23B2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C91102AF1E4D177B00C23B2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C91102C81E4D177B00C23B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C91102C91E4D177B00C23B2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C91102CB1E4D177B00C23B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BVBT6986X6;
+				INFOPLIST_FILE = KetoRecipes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = selo.KetoRecipes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C91102CC1E4D177B00C23B2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BVBT6986X6;
+				INFOPLIST_FILE = KetoRecipes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = selo.KetoRecipes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C91102CE1E4D177B00C23B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BVBT6986X6;
+				INFOPLIST_FILE = KetoRecipesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = selo.KetoRecipesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KetoRecipes.app/KetoRecipes";
+			};
+			name = Debug;
+		};
+		C91102CF1E4D177B00C23B2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BVBT6986X6;
+				INFOPLIST_FILE = KetoRecipesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = selo.KetoRecipesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KetoRecipes.app/KetoRecipes";
+			};
+			name = Release;
+		};
+		C91102D11E4D177B00C23B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = BVBT6986X6;
+				INFOPLIST_FILE = KetoRecipesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = selo.KetoRecipesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KetoRecipes;
+			};
+			name = Debug;
+		};
+		C91102D21E4D177B00C23B2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = BVBT6986X6;
+				INFOPLIST_FILE = KetoRecipesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = selo.KetoRecipesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KetoRecipes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C911029A1E4D177B00C23B2A /* Build configuration list for PBXProject "KetoRecipes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91102C81E4D177B00C23B2A /* Debug */,
+				C91102C91E4D177B00C23B2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C91102CA1E4D177B00C23B2A /* Build configuration list for PBXNativeTarget "KetoRecipes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91102CB1E4D177B00C23B2A /* Debug */,
+				C91102CC1E4D177B00C23B2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C91102CD1E4D177B00C23B2A /* Build configuration list for PBXNativeTarget "KetoRecipesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91102CE1E4D177B00C23B2A /* Debug */,
+				C91102CF1E4D177B00C23B2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C91102D01E4D177B00C23B2A /* Build configuration list for PBXNativeTarget "KetoRecipesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91102D11E4D177B00C23B2A /* Debug */,
+				C91102D21E4D177B00C23B2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C91102A91E4D177B00C23B2A /* KetoRecipes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C91102AA1E4D177B00C23B2A /* KetoRecipes.xcdatamodel */,
+			);
+			currentVersion = C91102AA1E4D177B00C23B2A /* KetoRecipes.xcdatamodel */;
+			path = KetoRecipes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C91102971E4D177B00C23B2A /* Project object */;
+}
