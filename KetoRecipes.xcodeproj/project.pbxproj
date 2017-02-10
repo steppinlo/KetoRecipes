@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9DB2E9627F23BE63F8C915C /* Pods_KetoRecipes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65AE17203DD30E7DDA98A79 /* Pods_KetoRecipes.framework */; };
 		C91102A31E4D177B00C23B2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91102A21E4D177B00C23B2A /* AppDelegate.swift */; };
 		C91102A51E4D177B00C23B2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91102A41E4D177B00C23B2A /* ViewController.swift */; };
 		C91102A81E4D177B00C23B2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91102A61E4D177B00C23B2A /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		C91102B01E4D177B00C23B2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91102AE1E4D177B00C23B2A /* LaunchScreen.storyboard */; };
 		C91102BB1E4D177B00C23B2A /* KetoRecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91102BA1E4D177B00C23B2A /* KetoRecipesTests.swift */; };
 		C91102C61E4D177B00C23B2A /* KetoRecipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91102C51E4D177B00C23B2A /* KetoRecipesUITests.swift */; };
+		C98D63421E4E1DD300721EE1 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98D63411E4E1DD300721EE1 /* ApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +36,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C98D633D1E4E19B200721EE1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9397451D3B55736BF6D10F8C /* Pods-KetoRecipes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetoRecipes.release.xcconfig"; path = "Pods/Target Support Files/Pods-KetoRecipes/Pods-KetoRecipes.release.xcconfig"; sourceTree = "<group>"; };
+		A65AE17203DD30E7DDA98A79 /* Pods_KetoRecipes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KetoRecipes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0438FCB19D0A8BAFABC4D70 /* Pods-KetoRecipes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetoRecipes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KetoRecipes/Pods-KetoRecipes.debug.xcconfig"; sourceTree = "<group>"; };
 		C911029F1E4D177B00C23B2A /* KetoRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KetoRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91102A21E4D177B00C23B2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C91102A41E4D177B00C23B2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,13 +60,14 @@
 		C91102AA1E4D177B00C23B2A /* KetoRecipes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KetoRecipes.xcdatamodel; sourceTree = "<group>"; };
 		C91102AC1E4D177B00C23B2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C91102AF1E4D177B00C23B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C91102B11E4D177B00C23B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C91102B11E4D177B00C23B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = KetoRecipes/Info.plist; sourceTree = "<group>"; };
 		C91102B61E4D177B00C23B2A /* KetoRecipesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KetoRecipesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91102BA1E4D177B00C23B2A /* KetoRecipesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KetoRecipesTests.swift; sourceTree = "<group>"; };
 		C91102BC1E4D177B00C23B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C91102C11E4D177B00C23B2A /* KetoRecipesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KetoRecipesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91102C51E4D177B00C23B2A /* KetoRecipesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KetoRecipesUITests.swift; sourceTree = "<group>"; };
 		C91102C71E4D177B00C23B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C98D63411E4E1DD300721EE1 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9DB2E9627F23BE63F8C915C /* Pods_KetoRecipes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E8374A1F67B4CE785423520 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A65AE17203DD30E7DDA98A79 /* Pods_KetoRecipes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C91102961E4D177B00C23B2A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +111,8 @@
 				C91102B91E4D177B00C23B2A /* KetoRecipesTests */,
 				C91102C41E4D177B00C23B2A /* KetoRecipesUITests */,
 				C91102A01E4D177B00C23B2A /* Products */,
+				ECBE487D7E06D4A8502BDAD6 /* Pods */,
+				1E8374A1F67B4CE785423520 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,8 +137,9 @@
 				C91102A61E4D177B00C23B2A /* Main.storyboard */,
 				C91102AC1E4D177B00C23B2A /* Assets.xcassets */,
 				C91102AE1E4D177B00C23B2A /* LaunchScreen.storyboard */,
-				C91102B11E4D177B00C23B2A /* Info.plist */,
 				C91102A91E4D177B00C23B2A /* KetoRecipes.xcdatamodeld */,
+				C98D633E1E4E1D1600721EE1 /* Supporting Files */,
+				C98D63411E4E1DD300721EE1 /* ApiClient.swift */,
 			);
 			path = KetoRecipes;
 			sourceTree = "<group>";
@@ -152,6 +183,24 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		C98D633E1E4E1D1600721EE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C91102B11E4D177B00C23B2A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		ECBE487D7E06D4A8502BDAD6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0438FCB19D0A8BAFABC4D70 /* Pods-KetoRecipes.debug.xcconfig */,
+				9397451D3B55736BF6D10F8C /* Pods-KetoRecipes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +208,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C91102CA1E4D177B00C23B2A /* Build configuration list for PBXNativeTarget "KetoRecipes" */;
 			buildPhases = (
+				70E69AF2D5D55761B239445C /* [CP] Check Pods Manifest.lock */,
 				C911029B1E4D177B00C23B2A /* Sources */,
 				C911029C1E4D177B00C23B2A /* Frameworks */,
 				C911029D1E4D177B00C23B2A /* Resources */,
+				FE38263211F4495DBE86652C /* [CP] Embed Pods Frameworks */,
+				E7847A10BCEAF437D48EA4BF /* [CP] Copy Pods Resources */,
+				C98D633D1E4E19B200721EE1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -284,6 +337,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		70E69AF2D5D55761B239445C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7847A10BCEAF437D48EA4BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KetoRecipes/Pods-KetoRecipes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE38263211F4495DBE86652C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KetoRecipes/Pods-KetoRecipes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C911029B1E4D177B00C23B2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -292,6 +393,7 @@
 				C91102A51E4D177B00C23B2A /* ViewController.swift in Sources */,
 				C91102AB1E4D177B00C23B2A /* KetoRecipes.xcdatamodeld in Sources */,
 				C91102A31E4D177B00C23B2A /* AppDelegate.swift in Sources */,
+				C98D63421E4E1DD300721EE1 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +541,7 @@
 		};
 		C91102CB1E4D177B00C23B2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0438FCB19D0A8BAFABC4D70 /* Pods-KetoRecipes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BVBT6986X6;
@@ -452,6 +555,7 @@
 		};
 		C91102CC1E4D177B00C23B2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9397451D3B55736BF6D10F8C /* Pods-KetoRecipes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BVBT6986X6;
@@ -540,6 +644,7 @@
 				C91102CC1E4D177B00C23B2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C91102CD1E4D177B00C23B2A /* Build configuration list for PBXNativeTarget "KetoRecipesTests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +653,7 @@
 				C91102CF1E4D177B00C23B2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C91102D01E4D177B00C23B2A /* Build configuration list for PBXNativeTarget "KetoRecipesUITests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +662,7 @@
 				C91102D21E4D177B00C23B2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
