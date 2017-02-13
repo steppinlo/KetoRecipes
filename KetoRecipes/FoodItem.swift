@@ -27,7 +27,7 @@ class Ingredient: NSManagedObject {
     static func deserialize(d: JSON) -> NSManagedObject {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let managedContext = appDelegate.persistentContainer.viewContext
-        var entity = NSEntityDescription.entity(forEntityName: "FoodItem",
+        var entity = NSEntityDescription.entity(forEntityName: "Ingredient",
                                               in: managedContext)!
         let ingredient = NSManagedObject(entity: entity,
                                        insertInto: nil)
