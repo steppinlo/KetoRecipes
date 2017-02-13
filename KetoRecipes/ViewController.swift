@@ -8,22 +8,49 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
+import CoreData
 
 class ViewController: UIViewController {
+    
+    var recipe: [NSManagedObject] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let parameters: [String: AnyObject] = [
-            "appId":  apiKeys!["nxId"]! as AnyObject,
-            "appKey":  apiKeys!["nxKey"]! as AnyObject,
-            "query":"apple" as AnyObject,
-            "filters": [
-                "item_type": 3
-            ] as AnyObject
-        ]
-        // Do any additional setup after loading the view, typically from a nib.
-        Alamofire.request("https://api.nutritionix.com/v1_1/search", method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseJSON { data in
-            print(data)
+        requestFood(query: "steak") { food in
+            
+            save(food: food)
+        }
+    }
+    
+    func save(food: FoodItem) {
+        
+        guard let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate else {
+                return
+        }
+        
+        // 1
+        let managedContext =
+            appDelegate.persistentContainer.viewContext
+        
+        // 2
+        let entity =
+            NSEntityDescription.entity(forEntityName: "Recipe",
+                                       in: managedContext)!
+        
+        let ingredients = NSManagedObject(entity: entity,
+                                         insertInto: managedContext)
+        
+        // 3
+        ingredients.setValue(food, forKeyPath: "ingredients")
+        
+        // 4
+        do {
+            try managedContext.save()
+            recipe.append(food)
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
         }
     }
 

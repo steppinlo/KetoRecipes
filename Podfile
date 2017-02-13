@@ -4,4 +4,5 @@ use_frameworks!
 
 target 'KetoRecipes' do
     pod 'Alamofire', '~> 4.3'
+    pod 'SwiftyJSON'
 end
