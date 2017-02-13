@@ -7,8 +7,8 @@
 //
 
 import Foundation
+import CoreData
 
-struct Recipe {
-    var num1 = 1
-    let num2 = 0
+class Recipe: NSManagedObject {
+    @NSManaged var ingredients: NSSet
 }

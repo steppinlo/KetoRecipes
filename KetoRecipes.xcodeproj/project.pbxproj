@@ -20,6 +20,7 @@
 		C98D63441E4E211300721EE1 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = C98D63431E4E211300721EE1 /* Keys.plist */; };
 		C98D63461E4E465200721EE1 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98D63451E4E465200721EE1 /* FoodItem.swift */; };
 		C98D63481E4E7ABE00721EE1 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98D63471E4E7ABE00721EE1 /* Recipe.swift */; };
+		C98D634A1E525E5D00721EE1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98D63491E525E5D00721EE1 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		C98D63431E4E211300721EE1 /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		C98D63451E4E465200721EE1 /* FoodItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		C98D63471E4E7ABE00721EE1 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		C98D63491E525E5D00721EE1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				C91102A91E4D177B00C23B2A /* KetoRecipes.xcdatamodeld */,
 				C98D633E1E4E1D1600721EE1 /* Supporting Files */,
 				C98D63411E4E1DD300721EE1 /* ApiClient.swift */,
+				C98D63491E525E5D00721EE1 /* Constants.swift */,
 			);
 			path = KetoRecipes;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				C91102AB1E4D177B00C23B2A /* KetoRecipes.xcdatamodeld in Sources */,
 				C91102A31E4D177B00C23B2A /* AppDelegate.swift in Sources */,
 				C98D63481E4E7ABE00721EE1 /* Recipe.swift in Sources */,
+				C98D634A1E525E5D00721EE1 /* Constants.swift in Sources */,
 				C98D63421E4E1DD300721EE1 /* ApiClient.swift in Sources */,
 				C98D63461E4E465200721EE1 /* FoodItem.swift in Sources */,
 			);

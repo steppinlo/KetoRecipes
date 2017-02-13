@@ -17,9 +17,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        requestFood(query: "steak") { food in
-            
-            save(food: food)
+        requestFood(query: "steak") { foods in
+            print(foods)
         }
     }
     
