@@ -48,4 +48,9 @@ class Ingredient: NSManagedObject {
         
         return ingredient
     }
+    
+    @NSManaged func addRecipesObject(employee: Recipe)
+    @NSManaged func removeRecipesObject(employee: Recipe)
+    @NSManaged func addRecipes(employees: NSSet)
+    @NSManaged func removeRecipes(employees: NSSet)
 }
