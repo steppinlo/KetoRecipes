@@ -35,7 +35,7 @@ extension AddRecipeIngredientViewCell: UITextFieldDelegate {
 }
 
 struct AddRecipeIngredientViewModel {
-    var ingredient: NSManagedObject
+    var ingredient: Ingredient
     var title: String {
         return ingredient.value(forKey: "name") as! String
     }
@@ -43,7 +43,7 @@ struct AddRecipeIngredientViewModel {
         return ingredient.value(forKey: "servingUnit") as! String
     }
     
-    init(ingredient: NSManagedObject) {
+    init(ingredient: Ingredient) {
         self.ingredient = ingredient
     }
 }

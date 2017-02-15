@@ -10,5 +10,21 @@ import Foundation
 import CoreData
 
 struct AddRecipeViewModel {
-    var ingredients = [NSManagedObject]()
+    var ingredients: [Ingredient] {
+        return Array(ingredientWithAmt.keys) as! [Ingredient]
+    }
+    var macrosCount = [
+        "carbs": 0,
+        "calories": 0,
+        "fiber": 0,
+        "fat": 0,
+        "protein": 0
+    ]
+    var ingredientWithAmt = [Ingredient:Int]()
+
+    func calculateMacros() {
+        for (ingredient, amount) in ingredientWithAmt {
+            
+        }
+    }
 }

@@ -88,24 +88,24 @@ class AddRecipeTableViewController: UITableViewController {
 }
 
 extension AddRecipeTableViewController: AddRecipeTableViewControllerDelegate {
-    internal func addIngredient(ingredient: NSManagedObject) {
+    internal func addIngredient(ingredient: Ingredient) {
         sectionWithCount[display.Ingredients]! += 1
-        viewModel.ingredients.append(ingredient)
+        viewModel.ingredientWithAmt[ingredient] = 0
         tableView.reloadData()
     }
 }
 
 extension AddRecipeTableViewController: AddRecipeIngredientDelegate {
-    func amountSet(amount: Int, forItem: NSManagedObject) {
+    func amountSet(amount: Int, forItem: Ingredient) {
         print(amount)
     }
 }
 
 protocol AddRecipeTableViewControllerDelegate {
-    func addIngredient(ingredient: NSManagedObject)
+    func addIngredient(ingredient: Ingredient)
 }
 
 protocol AddRecipeIngredientDelegate {
-    func amountSet(amount: Int, forItem: NSManagedObject)
+    func amountSet(amount: Int, forItem: Ingredient)
 }
 

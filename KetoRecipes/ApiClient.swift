@@ -22,7 +22,7 @@ struct ApiClient {
         "x-remote-user-id": "0"
     ]
     
-    func requestFood(query: String, completion: @escaping ([NSManagedObject])->Void) {
+    func requestFood(query: String, completion: @escaping ([Ingredient])->Void) {
         let param: Parameters = [
             "appId": apiKeys!["nxId"]! as! String,
             "appKey":  apiKeys!["nxKey"]! as! String,
@@ -41,7 +41,7 @@ struct ApiClient {
             switch response.result {
             case let .success(data):
                 let json = JSON(data)
-                var ingredients = [NSManagedObject]()
+                var ingredients = [Ingredient]()
                 for item in json["hits"] {
                     let f = Ingredient.deserialize(d: item.1)
                     ingredients.append(f)

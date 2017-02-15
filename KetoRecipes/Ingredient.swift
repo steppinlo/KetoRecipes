@@ -24,12 +24,12 @@ class Ingredient: NSManagedObject {
     @NSManaged var amount: Int
     @NSManaged var recipes: NSSet
 //
-    static func deserialize(d: JSON) -> NSManagedObject {
+    static func deserialize(d: JSON) -> Ingredient {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let managedContext = appDelegate.persistentContainer.viewContext
         var entity = NSEntityDescription.entity(forEntityName: "Ingredient",
                                               in: managedContext)!
-        let ingredient = NSManagedObject(entity: entity,
+        let ingredient = Ingredient(entity: entity,
                                        insertInto: nil)
         
         ingredient.setValue(d["_id"].string ?? "", forKey: "id")

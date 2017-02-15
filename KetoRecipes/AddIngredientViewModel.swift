@@ -11,7 +11,7 @@ import CoreData
 
 class AddIngredientViewModel {
     var client = ApiClient()
-    var foods = [NSManagedObject]()
+    var foods = [Ingredient]()
     
     func fetchIngredient(query: String, completion: @escaping () -> Void) {
         client.requestFood(query: query) { results in

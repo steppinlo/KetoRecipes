@@ -43,7 +43,7 @@ class AddIngredientTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ingredientCell", for: indexPath) as! IngredientSearchViewCell
-        cell.setup(ingredient: (viewModel.foods[indexPath.row] as? NSManagedObject)!)
+        cell.setup(ingredient: viewModel.foods[indexPath.row])
         return cell
     }
 
