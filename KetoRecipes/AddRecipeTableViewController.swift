@@ -39,10 +39,27 @@ class AddRecipeTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        return cell
+        let section = display.allSections[indexPath.section]
+        switch section {
+        case .Title:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Title", for: indexPath)
+            return cell
+        case .Ingredients:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Ingredients", for: indexPath)
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+            return cell
+        }
+        
     }
     
+    @IBAction func addIngredient(_ sender: UIButton) {
+        let nc = UINavigationController()
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "AddIngredientTableViewController") as! AddIngredientTableViewController
+        nc.pushViewController(vc, animated: false)
+        self.present(nc, animated: true, completion: nil)
+    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         guard let sec = AddRecipeSections(rawValue: section) else { return 0 }
@@ -50,7 +67,7 @@ class AddRecipeTableViewController: UITableViewController {
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return AddRecipeSections.count
+        return display.count
     }
     
 

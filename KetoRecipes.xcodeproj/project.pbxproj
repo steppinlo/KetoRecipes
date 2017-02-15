@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		A9DB2E9627F23BE63F8C915C /* Pods_KetoRecipes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65AE17203DD30E7DDA98A79 /* Pods_KetoRecipes.framework */; };
 		C91102A31E4D177B00C23B2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91102A21E4D177B00C23B2A /* AppDelegate.swift */; };
-		C91102A51E4D177B00C23B2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91102A41E4D177B00C23B2A /* ViewController.swift */; };
+		C91102A51E4D177B00C23B2A /* AddIngredientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91102A41E4D177B00C23B2A /* AddIngredientTableViewController.swift */; };
 		C91102A81E4D177B00C23B2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91102A61E4D177B00C23B2A /* Main.storyboard */; };
 		C91102AB1E4D177B00C23B2A /* KetoRecipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C91102A91E4D177B00C23B2A /* KetoRecipes.xcdatamodeld */; };
 		C91102AD1E4D177B00C23B2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91102AC1E4D177B00C23B2A /* Assets.xcassets */; };
 		C91102B01E4D177B00C23B2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91102AE1E4D177B00C23B2A /* LaunchScreen.storyboard */; };
 		C91102BB1E4D177B00C23B2A /* KetoRecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91102BA1E4D177B00C23B2A /* KetoRecipesTests.swift */; };
 		C91102C61E4D177B00C23B2A /* KetoRecipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91102C51E4D177B00C23B2A /* KetoRecipesUITests.swift */; };
+		C94517AA1E54BA9A002143C0 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94517A91E54BA9A002143C0 /* UIViewController.swift */; };
+		C94517AC1E54D346002143C0 /* AddIngredientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94517AB1E54D346002143C0 /* AddIngredientViewModel.swift */; };
 		C98D63421E4E1DD300721EE1 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98D63411E4E1DD300721EE1 /* ApiClient.swift */; };
 		C98D63441E4E211300721EE1 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = C98D63431E4E211300721EE1 /* Keys.plist */; };
 		C98D63461E4E465200721EE1 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98D63451E4E465200721EE1 /* Ingredient.swift */; };
@@ -64,7 +66,7 @@
 		C0438FCB19D0A8BAFABC4D70 /* Pods-KetoRecipes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KetoRecipes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KetoRecipes/Pods-KetoRecipes.debug.xcconfig"; sourceTree = "<group>"; };
 		C911029F1E4D177B00C23B2A /* KetoRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KetoRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91102A21E4D177B00C23B2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C91102A41E4D177B00C23B2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C91102A41E4D177B00C23B2A /* AddIngredientTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientTableViewController.swift; sourceTree = "<group>"; };
 		C91102A71E4D177B00C23B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C91102AA1E4D177B00C23B2A /* KetoRecipes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KetoRecipes.xcdatamodel; sourceTree = "<group>"; };
 		C91102AC1E4D177B00C23B2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +78,8 @@
 		C91102C11E4D177B00C23B2A /* KetoRecipesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KetoRecipesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91102C51E4D177B00C23B2A /* KetoRecipesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KetoRecipesUITests.swift; sourceTree = "<group>"; };
 		C91102C71E4D177B00C23B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C94517A91E54BA9A002143C0 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		C94517AB1E54D346002143C0 /* AddIngredientViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddIngredientViewModel.swift; sourceTree = "<group>"; };
 		C98D63411E4E1DD300721EE1 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		C98D63431E4E211300721EE1 /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		C98D63451E4E465200721EE1 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
@@ -147,13 +151,13 @@
 		C91102A11E4D177B00C23B2A /* KetoRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				C94517A81E54BA6F002143C0 /* Extensions */,
 				C98D634D1E5274CE00721EE1 /* Resources */,
 				C98D634C1E5274A100721EE1 /* ViewControllers */,
 				C98D634B1E5272BC00721EE1 /* Views */,
 				C91102D41E4D17B200C23B2A /* ViewModels */,
 				C91102D31E4D17A600C23B2A /* Models */,
 				C91102A21E4D177B00C23B2A /* AppDelegate.swift */,
-				C91102A41E4D177B00C23B2A /* ViewController.swift */,
 				C91102A61E4D177B00C23B2A /* Main.storyboard */,
 				C91102AC1E4D177B00C23B2A /* Assets.xcassets */,
 				C91102AE1E4D177B00C23B2A /* LaunchScreen.storyboard */,
@@ -196,8 +200,17 @@
 			isa = PBXGroup;
 			children = (
 				C98D63541E53914700721EE1 /* HomeViewModel.swift */,
+				C94517AB1E54D346002143C0 /* AddIngredientViewModel.swift */,
 			);
 			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		C94517A81E54BA6F002143C0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C94517A91E54BA9A002143C0 /* UIViewController.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		C98D633E1E4E1D1600721EE1 /* Supporting Files */ = {
@@ -223,6 +236,7 @@
 			children = (
 				C98D63521E53912E00721EE1 /* HomeViewController.swift */,
 				C98D63561E5397F900721EE1 /* AddRecipeTableViewController.swift */,
+				C91102A41E4D177B00C23B2A /* AddIngredientTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -435,12 +449,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C91102A51E4D177B00C23B2A /* ViewController.swift in Sources */,
+				C91102A51E4D177B00C23B2A /* AddIngredientTableViewController.swift in Sources */,
 				C91102AB1E4D177B00C23B2A /* KetoRecipes.xcdatamodeld in Sources */,
 				C91102A31E4D177B00C23B2A /* AppDelegate.swift in Sources */,
 				C98D63551E53914700721EE1 /* HomeViewModel.swift in Sources */,
+				C94517AC1E54D346002143C0 /* AddIngredientViewModel.swift in Sources */,
 				C98D63511E52761C00721EE1 /* IngredientSearchViewCell.swift in Sources */,
 				C98D63481E4E7ABE00721EE1 /* Recipe.swift in Sources */,
+				C94517AA1E54BA9A002143C0 /* UIViewController.swift in Sources */,
 				C98D63531E53912E00721EE1 /* HomeViewController.swift in Sources */,
 				C98D634A1E525E5D00721EE1 /* Constants.swift in Sources */,
 				C98D63421E4E1DD300721EE1 /* ApiClient.swift in Sources */,

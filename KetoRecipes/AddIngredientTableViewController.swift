@@ -11,27 +11,29 @@ import Alamofire
 import SwiftyJSON
 import CoreData
 
-class RecipesTableViewController: UITableViewController {
-    
-    var recipe = [NSManagedObject]()
+class AddIngredientTableViewController: UITableViewController {
+    @IBOutlet weak var searchBar: UISearchBar!
+    var viewModel = AddIngredientViewModel()
     let apiClient = ApiClient()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        searchBar.delegate = self
         
         let nibName = UINib(nibName: "IngredientSearchCell", bundle: nil)
         tableView.register(nibName, forCellReuseIdentifier: "ingredientCell")
         
-        apiClient.requestFood(query: "chicken") { [weak self] foods in
-            self?.recipe = foods
-            self?.tableView.reloadData()
-        }
+        addDismissKeyboardGesture()
+    }
+
+    @IBAction func closeModalTapped(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return recipe.count
+        return viewModel.foods.count
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -40,11 +42,22 @@ class RecipesTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ingredientCell", for: indexPath) as! IngredientSearchViewCell
-//        let obj = recipe[indexPath.row] as? NSManagedObject
-//        cell.textLabel?.text = obj?.value(forKey: "name") as! String?
-        cell.setup(ingredient: (recipe[indexPath.row] as? NSManagedObject)!)
+        cell.setup(ingredient: (viewModel.foods[indexPath.row] as? NSManagedObject)!)
         return cell
+    }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //hello
     }
 }
 
+extension AddIngredientTableViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        dismissKeyboard()
+        guard let text = searchBar.text else { return }
+        viewModel.fetchIngredient(query: text) {
+            self.tableView.reloadData()
+        }
+    }
+}
 
