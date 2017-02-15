@@ -15,6 +15,7 @@ class AddIngredientTableViewController: UITableViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     var viewModel = AddIngredientViewModel()
     let apiClient = ApiClient()
+    var delegate: AddRecipeTableViewControllerDelegate! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +48,8 @@ class AddIngredientTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //hello
+        delegate?.addIngredient(ingredient: viewModel.foods[indexPath.row])
+        self.dismiss(animated: true, completion: nil)
     }
 }
 

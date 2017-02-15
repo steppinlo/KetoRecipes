@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 enum AddRecipeSections: Int {
     case Title = 0
@@ -22,6 +23,7 @@ enum AddRecipeSections: Int {
 class AddRecipeTableViewController: UITableViewController {
     var display = AddRecipeSections.self
     var sectionWithCount = [AddRecipeSections: Int]()
+    var viewModel = AddRecipeViewModel()
 
     override func viewDidLoad() {
         tableView.dataSource = self
@@ -45,8 +47,13 @@ class AddRecipeTableViewController: UITableViewController {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Title", for: indexPath)
             return cell
         case .Ingredients:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Ingredients", for: indexPath)
-            return cell
+            if indexPath.row == sectionWithCount[display.Ingredients]! - 1 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "AddIngredient", for: indexPath)
+                return cell
+            } else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "Ingredient", for: indexPath) as! AddRecipeIngredientViewCell
+                return cell
+            }
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
             return cell
@@ -57,11 +64,12 @@ class AddRecipeTableViewController: UITableViewController {
     @IBAction func addIngredient(_ sender: UIButton) {
         let nc = UINavigationController()
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "AddIngredientTableViewController") as! AddIngredientTableViewController
+        vc.delegate = self
         nc.pushViewController(vc, animated: false)
         self.present(nc, animated: true, completion: nil)
     }
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         guard let sec = AddRecipeSections(rawValue: section) else { return 0 }
         return sectionWithCount[sec]!
     }
@@ -69,6 +77,15 @@ class AddRecipeTableViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return display.count
     }
-    
+}
 
+extension AddRecipeTableViewController: AddRecipeTableViewControllerDelegate {
+    internal func addIngredient(ingredient: NSManagedObject) {
+        sectionWithCount[display.Ingredients]! += 1
+        tableView.reloadData()
+    }
+}
+
+protocol AddRecipeTableViewControllerDelegate {
+    func addIngredient(ingredient: NSManagedObject)
 }

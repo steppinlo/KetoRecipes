@@ -18,6 +18,8 @@
 		C91102C61E4D177B00C23B2A /* KetoRecipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91102C51E4D177B00C23B2A /* KetoRecipesUITests.swift */; };
 		C94517AA1E54BA9A002143C0 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94517A91E54BA9A002143C0 /* UIViewController.swift */; };
 		C94517AC1E54D346002143C0 /* AddIngredientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94517AB1E54D346002143C0 /* AddIngredientViewModel.swift */; };
+		C94517AE1E54E196002143C0 /* AddRecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94517AD1E54E196002143C0 /* AddRecipeViewModel.swift */; };
+		C94517B01E54E491002143C0 /* AddRecipeIngredientViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94517AF1E54E491002143C0 /* AddRecipeIngredientViewCell.swift */; };
 		C98D63421E4E1DD300721EE1 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98D63411E4E1DD300721EE1 /* ApiClient.swift */; };
 		C98D63441E4E211300721EE1 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = C98D63431E4E211300721EE1 /* Keys.plist */; };
 		C98D63461E4E465200721EE1 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98D63451E4E465200721EE1 /* Ingredient.swift */; };
@@ -80,6 +82,8 @@
 		C91102C71E4D177B00C23B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C94517A91E54BA9A002143C0 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		C94517AB1E54D346002143C0 /* AddIngredientViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddIngredientViewModel.swift; sourceTree = "<group>"; };
+		C94517AD1E54E196002143C0 /* AddRecipeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecipeViewModel.swift; sourceTree = "<group>"; };
+		C94517AF1E54E491002143C0 /* AddRecipeIngredientViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRecipeIngredientViewCell.swift; sourceTree = "<group>"; };
 		C98D63411E4E1DD300721EE1 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		C98D63431E4E211300721EE1 /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		C98D63451E4E465200721EE1 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
@@ -201,6 +205,7 @@
 			children = (
 				C98D63541E53914700721EE1 /* HomeViewModel.swift */,
 				C94517AB1E54D346002143C0 /* AddIngredientViewModel.swift */,
+				C94517AD1E54E196002143C0 /* AddRecipeViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -227,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				C98D63501E52761C00721EE1 /* IngredientSearchViewCell.swift */,
+				C94517AF1E54E491002143C0 /* AddRecipeIngredientViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -456,7 +462,9 @@
 				C94517AC1E54D346002143C0 /* AddIngredientViewModel.swift in Sources */,
 				C98D63511E52761C00721EE1 /* IngredientSearchViewCell.swift in Sources */,
 				C98D63481E4E7ABE00721EE1 /* Recipe.swift in Sources */,
+				C94517B01E54E491002143C0 /* AddRecipeIngredientViewCell.swift in Sources */,
 				C94517AA1E54BA9A002143C0 /* UIViewController.swift in Sources */,
+				C94517AE1E54E196002143C0 /* AddRecipeViewModel.swift in Sources */,
 				C98D63531E53912E00721EE1 /* HomeViewController.swift in Sources */,
 				C98D634A1E525E5D00721EE1 /* Constants.swift in Sources */,
 				C98D63421E4E1DD300721EE1 /* ApiClient.swift in Sources */,
