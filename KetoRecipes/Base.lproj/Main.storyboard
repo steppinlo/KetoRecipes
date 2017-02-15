@@ -112,13 +112,13 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X2E-cv-fne">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Total" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X2E-cv-fne">
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="50" id="8Ez-Wu-g5B"/>
                                             </constraints>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         </textField>
                                     </subviews>
                                     <constraints>
@@ -129,6 +129,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="amountTextField" destination="X2E-cv-fne" id="AKG-fr-sx5"/>
                                     <outlet property="ingredientTitleLabel" destination="6Fn-hk-hhN" id="CWh-6r-xbH"/>
                                 </connections>
                             </tableViewCell>
@@ -152,10 +153,34 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="HHg-Su-2TO">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TotalMacros" id="HHg-Su-2TO" customClass="AddRecipeTotalMacrosViewCell" customModule="KetoRecipes" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="224" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HHg-Su-2TO" id="bw3-eQ-mI5">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPi-S9-XKR">
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="tPi-S9-XKR" firstAttribute="trailing" secondItem="bw3-eQ-mI5" secondAttribute="trailingMargin" id="VxC-jq-VbP"/>
+                                        <constraint firstItem="tPi-S9-XKR" firstAttribute="bottom" secondItem="bw3-eQ-mI5" secondAttribute="bottomMargin" id="fAj-hL-LKK"/>
+                                        <constraint firstItem="tPi-S9-XKR" firstAttribute="leading" secondItem="bw3-eQ-mI5" secondAttribute="leadingMargin" id="kZA-Dg-3Zv"/>
+                                        <constraint firstItem="tPi-S9-XKR" firstAttribute="top" secondItem="bw3-eQ-mI5" secondAttribute="topMargin" id="rKm-eO-9Gw"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="macrosLabel" destination="tPi-S9-XKR" id="bre-Kt-se5"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="x6I-2s-yYR">
+                                <rect key="frame" x="0.0" y="268" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x6I-2s-yYR" id="68f-Y5-Kgw">
                                     <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>

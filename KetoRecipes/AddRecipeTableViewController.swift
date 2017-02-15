@@ -13,10 +13,11 @@ import CoreData
 enum AddRecipeSections: Int {
     case Title = 0
     case Ingredients = 1
-    case Instructions = 2
-    case Picture = 3
+    case TotalMacros = 2
+    case Instructions = 3
+    case Picture = 4
     
-    static let allSections = [Title, Ingredients, Instructions, Picture]
+    static let allSections = [Title, Ingredients, TotalMacros, Instructions, Picture]
     static var count: Int { return AddRecipeSections.Picture.rawValue + 1}
 }
 
@@ -34,6 +35,7 @@ class AddRecipeTableViewController: UITableViewController {
         }
         
         tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 10))
+        addDismissKeyboardGesture()
     }
 
     @IBAction func closeModalButton(_ sender: UIBarButtonItem) {
@@ -52,8 +54,14 @@ class AddRecipeTableViewController: UITableViewController {
                 return cell
             } else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "Ingredient", for: indexPath) as! AddRecipeIngredientViewCell
+                let vm = AddRecipeIngredientViewModel(ingredient: viewModel.ingredients[indexPath.row])
+                cell.viewModel = vm
+                cell.delegate = self
                 return cell
             }
+        case .TotalMacros:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TotalMacros", for: indexPath) as! AddRecipeTotalMacrosViewCell
+            return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
             return cell
@@ -82,10 +90,22 @@ class AddRecipeTableViewController: UITableViewController {
 extension AddRecipeTableViewController: AddRecipeTableViewControllerDelegate {
     internal func addIngredient(ingredient: NSManagedObject) {
         sectionWithCount[display.Ingredients]! += 1
+        viewModel.ingredients.append(ingredient)
         tableView.reloadData()
+    }
+}
+
+extension AddRecipeTableViewController: AddRecipeIngredientDelegate {
+    func amountSet(amount: Int, forItem: NSManagedObject) {
+        print(amount)
     }
 }
 
 protocol AddRecipeTableViewControllerDelegate {
     func addIngredient(ingredient: NSManagedObject)
 }
+
+protocol AddRecipeIngredientDelegate {
+    func amountSet(amount: Int, forItem: NSManagedObject)
+}
+
